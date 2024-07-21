@@ -1,3 +1,13 @@
+#REFERENCES
+#https://www.geeksforgeeks.org/html-login-form/
+#https://www.w3schools.com/howto/howto_css_login_form.asp
+#https://discuss.python.org/t/how-to-create-a-registration-user-login-with-hashing/35735
+#USAGE OF AI TO UNDERSTAND SIGN_UP AND SIGN_IN FUNCTIONS AND HTML PAGES
+
+
+
+
+
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -75,5 +85,7 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     app.run(debug=True)
+
+
 
 
